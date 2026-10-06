@@ -1,0 +1,22 @@
+name: Delivery task
+description: Define one business outcome and a reviewable implementation
+title: "[Task] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Business objective and user decision
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and acceptance checks
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, assumptions and next action
+      description: Use Observed / Assumed / To Validate. Suggested label type:task.
+

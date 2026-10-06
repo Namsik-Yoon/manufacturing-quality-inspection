@@ -1,0 +1,1 @@
+"""Customer-facing FastAPI adapter."""

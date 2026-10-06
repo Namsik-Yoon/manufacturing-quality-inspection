@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "tag": "v0.1.0",
+  "commit": "2931cbae0b5613426572e1e80563f8bd5b01eca4",
+  "repository": "https://github.com/Namsik-Yoon/solution-delivery-framework.git",
+  "upgrade_policy": "explicit decision only; no automatic update"
+}

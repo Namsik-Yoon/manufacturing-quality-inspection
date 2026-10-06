@@ -1,0 +1,22 @@
+name: Architecture decision
+description: Record a decision or explicit framework upgrade
+title: "[Decision] "
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context, options and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision, consequences and validation
+    validations:
+      required: true
+  - type: textarea
+    id: upgrade
+    attributes:
+      label: Framework old/new version and commit, impact and migration
+      description: Include quality/token effects or mark unavailable. Suggested label type:decision.
+

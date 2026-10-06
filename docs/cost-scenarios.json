@@ -1,0 +1,20 @@
+{
+  "measurement": "estimated scenario with unavailable pricing",
+  "runtime_llm_calls": 0,
+  "runtime_llm_cost_per_1000": 0,
+  "currency": null,
+  "price_as_of": null,
+  "price_source": null,
+  "hourly_compute_price": null,
+  "assumed_active_hours_per_month": 160,
+  "monthly_request_scenarios": [
+    10000,
+    100000,
+    1000000
+  ],
+  "storage_cost": null,
+  "egress_cost": null,
+  "human_review_unit_cost": null,
+  "note": "Provide dated deployment pricing and measured throughput before calculating total monthly cost."
+}
+

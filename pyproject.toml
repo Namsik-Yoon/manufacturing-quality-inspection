@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "manufacturing-quality-inspection"
+version = "0.1.0"
+description = "CPU image-inspection triage workflow with an offline synthetic demo"
+readme = "README.md"
+requires-python = "==3.12.15"
+license = "MIT"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "numpy>=2,<3",
+  "pillow>=11,<13",
+  "uvicorn>=0.34,<1",
+]
+
+[dependency-groups]
+dev = ["httpx>=0.28,<1", "pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+quality-inspection = "quality_inspection.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quality_inspection", "app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+

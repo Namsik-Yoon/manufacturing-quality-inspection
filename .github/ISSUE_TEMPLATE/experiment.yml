@@ -1,0 +1,22 @@
+name: Baseline experiment
+description: Predeclare an experiment and preserve its evidence
+title: "[Experiment] "
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and business KPI
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data rights, frozen split, configuration and command
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Metrics, failure cases, cost and accepted/rejected decision
+      description: Distinguish targets from achieved results. Suggested label type:experiment.
+
