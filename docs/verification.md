@@ -24,8 +24,15 @@ Docker on Linux ARM64 (Docker Desktop engine 29.4.3):
 
 The sandboxed test host required workspace-local uv/buildx caches. Those paths are verification setup only and do not appear in committed runtime/config files.
 
-## Configured or pending
+## Verified after publication
 
-GitHub CI defines ordinary-clone Windows/macOS/Linux jobs, Docker smoke and recursive developer-pin checks. Remote results are recorded after the initial push.
+Public repositories: `Namsik-Yoon/solution-delivery-framework` and `Namsik-Yoon/manufacturing-quality-inspection`.
+Framework tag/release `v0.1.0` resolves to `2931cbae0b5613426572e1e80563f8bd5b01eca4`.
+
+- `git clone https://github.com/Namsik-Yoon/manufacturing-quality-inspection.git`: passed. No submodule initialization; frozen dependency install, lint/format, 9 tests, environment/import check and CLI demo passed.
+- `git clone --recurse-submodules https://github.com/Namsik-Yoon/manufacturing-quality-inspection.git`: passed without local URL redirection. `uv run python scripts/verify_framework.py` verified the published commit and all 15 routes.
+- [GitHub CI run 37415675740](https://github.com/Namsik-Yoon/manufacturing-quality-inspection/actions/runs/37415675740), commit `a4bb01c406d609576c5d86bdb2e27640968a19e6`: **success**. All five jobs completed successfully: customer ubuntu-latest, customer windows-latest, customer macos-latest, Docker smoke and developer submodule/receipt checks.
+
+## Pending business/operating validation
 
 Actual user-created Codespaces session, MVTec form acquisition and benchmark execution, production workload/latency, real operator acceptance, economics and commercial dataset rights remain unverified. No production KPI is claimed.

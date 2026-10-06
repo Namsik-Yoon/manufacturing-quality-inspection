@@ -67,10 +67,10 @@ The evaluator reserves every fifth sorted healthy training image for calibration
 
 ## Delivery evidence
 
+- [Initialization report and final directory tree](docs/initialization-report.md), [executed verification](docs/verification.md)
 - [Business problem](docs/business-problem.md), [assumptions](docs/assumptions.md), [candidate selection](docs/project-selection.md)
 - [Design](docs/solution-design.md), [architecture and decisions](docs/architecture.md)
 - [Evaluation plan](docs/evaluation-plan.md), [baseline plan](docs/baseline-plan.md), [experiment log](docs/experiment-log.md)
 - [Runbook](docs/runbook.md), [mobile work and labels](docs/github-workflow.md), [retrospective](docs/retrospective.md)
 
 MIT covers original code/docs. MVTec data is separately CC BY-NC-SA 4.0 and is not distributed here. See [data governance](docs/data-governance.md).
-
